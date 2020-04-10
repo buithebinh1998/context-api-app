@@ -31,7 +31,8 @@ const UserForm = () => {
     }
 
     const onCreateUser = () => {
-        setUsers(prevUsers => [...prevUsers, {id: id, name: name, email: email, active: active}]);
+        const user = [...users,{id: id, name: name, email: email, active: active}];
+        setUsers(user);
     }
     
     const onRemoveUser = () => {
